@@ -63,24 +63,46 @@ p {
 .block__content__text__menu__location {
   width: 247px;
   height: 80px;
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 10px;
+   
 }
 .block__content__text__menu__location__first {
   font-size: 18px;
   color: #787573;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 0px;
 }
 .block__content__text__menu__location__second {
   font-size: 13px;
   color: #090808;
   font-family: "Roboto", sans-serif;
+  margin-top: 0;
 }
 .block__content__text__menu__dates {
   width: 236px;
   height: 80px;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+}
+
+.block__content__text__menu__dates__line{
+    width: 1px;
+    height: 36px;
+    position: absolute;
+    z-index: 4;
+    left: 230px;
 }
 .block__content__text__menu__buttom{
 width: 189px;
 height: 80px;
+display: flex;
+   
+    align-items: center;
+    justify-content: center;
 }
 .block__content__text__menu__buttom__inside{
     background-color: #08786C;
