@@ -149,14 +149,30 @@ p {
   height: 252px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
 }
 .firstservis {
   width: 370px;
   height: 139px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.secondservis{
+  width: 370px;
+  height: 139px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.thirdservis{
+  width: 370px;
+  height: 139px;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
 }
@@ -170,10 +186,21 @@ h3 {
   color: #2D3033;
   font-size: 24px;
   font-family: "Raleway", sans-serif;
+  width: 270px;
+  text-align: left;
+  margin-left: 20px;
+}
+.servisbottom::before{
+  content: "";
+  width: 70px;
+  height: 70px;
 }
 .servistext{
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   color: #2D3033;
   width: 270px;
+  height: 80px;
+  text-align: left;
 }
+
