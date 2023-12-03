@@ -13,13 +13,13 @@ body {
 
 .wrapper {
   max-width: 1510px;
-  height: 1024px;
+  
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-
+ margin-bottom: 120px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,6 @@ text-align: center;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  
 }
 .wrapper__middle__first {
   background-color: #95e1d3;
@@ -83,8 +82,8 @@ text-align: center;
     height: 338px;
     position: absolute;
     left: 290px;
-    top: 490px;
-  z-index:  100;
+    top: 310px;
+  z-index:  1;
   background: linear-gradient(
     rgba(243, 130, 129, 0.75),
     rgba(239, 170, 96, 0.779)
@@ -104,4 +103,33 @@ p{
     font-size: 24px;
     font-family: "Raleway", sans-serif;
     margin-top: 30px;
+}
+.greenmenu{
+  background-color: #95E1D3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1510px;
+  height: 252px;
+}
+.greenbox{
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  width: 234px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0;
+}
+.boxtext{
+  font-size: 24px;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+}
+.greentitle{
+  font-size: 64px;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
 }
