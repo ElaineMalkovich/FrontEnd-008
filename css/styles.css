@@ -94,12 +94,12 @@ hr.wrapper__default {
   justify-content: center;
   flex-direction: column;
 }
-.wrapper__middle__background__icon {
+.wrapper__middle__background__icon{
   position: absolute;
   z-index: 2;
   top: 110px;
 }
-.wrapper__middle__background__super {
+.wrapper__middle__background__super{
   position: absolute;
   z-index: 2;
   top: 150px;
@@ -158,6 +158,7 @@ p {
 }
 .menuservises {
   height: 252px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,10 +188,26 @@ p {
   align-items: center;
   flex-direction: column;
 }
-.titleicon {
+.titleicon{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.image{
+  position: relative;
+ z-index: 4;
+ bottom: 60px;
+right: 30px;
+
+
 }
 h3 {
   text-transform: uppercase;
@@ -199,13 +216,9 @@ h3 {
   font-family: "Raleway", sans-serif;
   width: 270px;
   text-align: left;
-  margin-left: 20px;
+  margin-bottom: 30px;
 }
-.servisbottom::before {
-  content: "";
-  width: 70px;
-  height: 70px;
-}
+
 .servistext {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
