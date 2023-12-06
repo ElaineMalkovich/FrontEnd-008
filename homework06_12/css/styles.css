@@ -47,6 +47,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   
 }
 .rhombus {
@@ -57,6 +58,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .number{
     color: #FFFFFF;
@@ -65,5 +67,11 @@ body {
     width: 24px;
 height: 52px;
 transform: rotate(-45deg);
-
+}
+.description{
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Futura PT", sans-serif;
+    width: 291px;
 }
