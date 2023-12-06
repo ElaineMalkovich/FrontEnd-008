@@ -76,3 +76,9 @@ body {
   font-family: "Futura PT", sans-serif;
   width: 291px;
 }
+.blackblock{
+    margin-top: 0;
+    width: 1920px;
+height: 730px;
+    background-color: #000000;
+}
