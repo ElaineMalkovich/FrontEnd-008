@@ -67,6 +67,7 @@ body {
     width: 24px;
 height: 52px;
 transform: rotate(-45deg);
+text-align: center;
 }
 .description{
     color: #FFFFFF;
