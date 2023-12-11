@@ -8,7 +8,7 @@
   justify-content: center;
   flex-direction: column;
   width: 692px;
-  height: 568px;
+  margin-top: 20px;
   margin-left: 30px;
 }
 h1 {
@@ -17,12 +17,15 @@ h1 {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 40px;
 }
-.wrapperinput {
+.textform{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
 }
 input {
   width: 220px;
   height: 50px;
-
   border-radius: 83px;
   border: 1px solid #bdbdbd;
 }
@@ -40,6 +43,105 @@ form {
   color: #424242;
   font-family: "Montserrat", sans-serif;
 }
-#telnumber{
-    margin-bottom: 10px; 
+#telnumber {
+  margin-bottom: 10px;
+}
+.emailform {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.emaillabel {
+  font-size: 12px;
+  color: #424242;
+  font-family: "Montserrat", sans-serif;
+}
+#emailinput {
+  margin-bottom: 10px;
+}
+input[type="checkbox"] {
+    display: none;
+  }
+  .checkboxlabel span{
+    width: 30px;
+    height: 30px;
+    border-radius: 6.64px;
+  border: 1px solid #976464;
+  display: inline-block;
+  position: relative;
+  background-color:#FFF;
+  padding: 2px;
+  }
+  [type=checkbox]:checked + span:before {
+    content: '\2714';
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  font-size:28px;
+  color:#976464;
+  }
+  
+.checkboxlabel{
+    font-size: 16px;
+    color: #424242;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checkboxform{
+   
+    width: 420px;
+}
+.forms{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+input[type="radio"] {
+    display: none;}
+.radiolabel span{
+    width: 31px;
+    height: 31px;  
+    border-radius: 50% ;
+    border: 1px solid #976464;
+  display: inline-block;
+  position: relative;
+  background-color:#FFF;
+  padding: 2px;
+  margin-right: 20px;
+}
+[type=radio]:checked + span:before {
+    content: '\25CF';
+  position: absolute;
+  left: -1px;
+  top: -23px;
+  font-size:60px;
+  color:#976464;
+  }
+.footerblock{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.radioform{
+    width: 460px;
+}
+
+.radiolabel{
+    font-size: 16px;
+   margin-bottom: 20px;
+   display: block;
+   text-align: right;
+    color: #424242;
+  font-family: "Montserrat", sans-serif;  
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
 }
