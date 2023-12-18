@@ -21,7 +21,7 @@ body {
 
 .header {
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
   margin-bottom: 90px;
@@ -32,18 +32,18 @@ body {
   text-align: center;
   color: #fff;
   width: 35%;
-  height: 143px;
+  height: 100%;
+  margin-left: 300px;
   margin-right: 50px;
   font-family: Lato, sans-serif;
-  font-size: 110px;
+  font-size: 700%;
 }
 
 .text {
   color: #fff;
   text-align: left;
-  width: 16%;
-  height: 8%;
-  margin-bottom: 4%;
+  width: 288px;
+  height: 73px;
   font-family: Futura PT, sans-serif;
   font-size: 24px;
 }
@@ -89,6 +89,107 @@ body {
   margin-left: 30px;
   font-family: Futura PT, sans-serif;
   font-size: 20px;
+}
+
+@media (width <= 1414px) {
+  .objective {
+    object-fit: cover;
+    background-size: auto 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 140%;
+    display: flex;
+  }
+
+  .rowrectangale {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1330px;
+    display: flex;
+  }
+
+  .columsrectangale {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 820px;
+    display: flex;
+  }
+
+  .rectangale {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    width: 45%;
+    height: 40%;
+    margin-top: 60px;
+    margin-left: 15%;
+    font-size: 400%;
+  }
+
+  .text {
+    width: 20%;
+    height: 8%;
+    margin-bottom: 4%;
+  }
+}
+
+@media (width <= 900px) {
+  .objective {
+    object-fit: cover;
+    background-size: auto 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 350%;
+    display: flex;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+  }
+
+  .rowrectangale {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1330px;
+    display: flex;
+  }
+
+  .columsrectangale {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 250px;
+    display: flex;
+  }
+
+  .rectangale {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    text-align: center;
+    width: 50%;
+    height: 20%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-right: 15%;
+    font-size: 400%;
+  }
+
+  .text {
+    text-align: center;
+    width: 25%;
+    height: 8%;
+    margin-bottom: 4%;
+  }
 }
 
 /*# sourceMappingURL=index.b8d1660c.css.map */
