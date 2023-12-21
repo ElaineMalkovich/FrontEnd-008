@@ -306,4 +306,45 @@ hr {
   box-shadow: 0 14px 28px #79797933;
 }
 
+.frame {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.frame__subtitle {
+  color: #585858;
+  text-align: center;
+  width: 275px;
+  height: 37px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+
+h3 {
+  color: #47a7e3;
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.frame__forms {
+  flex-direction: column;
+  display: flex;
+}
+
+.forms__info {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.info {
+  color: #83bcdc;
+  margin-left: 5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=index.53678b06.css.map */

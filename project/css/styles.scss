@@ -293,7 +293,7 @@ hr{
 }
 
 
-
+/* Intro__form */
 .intro__form{
     background-image: url(/images/circle.png);
     background-repeat: no-repeat;
@@ -312,4 +312,41 @@ border-radius: 25px;
 gap: 10px;
 background-color: #FFFFFF;
 box-shadow: 0 14px 28px  #79797933;
+}
+.frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frame__subtitle{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(88, 88, 88, 1);
+    text-align: center;
+    width: 275px;
+height: 37px;
+
+}
+h3{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(71, 167, 227, 1);
+    font-weight: 500;
+}
+.frame__forms{
+    display: flex;
+    flex-direction: column;
+
+}
+.forms__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    margin-left: 5px;
+    font-size: 14px;
+    color: rgba(131, 188, 220, 1);
+    font-family: 'Montserrat', sans-serif;
 }
