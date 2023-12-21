@@ -29,7 +29,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
- 
   background-image: url(/images/Polosa.png), url(/images/gradienthomepage.png),
     linear-gradient(to bottom, #439ef315 30%, #ffffff 40%);
 
@@ -59,9 +58,7 @@ body {
     color: #47A7E3;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    
     margin-bottom: 10px;
-   
 }
 ol{
     list-style-image: url(/images/forlist.png);
@@ -72,7 +69,7 @@ ol{
     font-size: 16px;
     color: #585858;
     margin-bottom: 30px;
-padding-left: 20px;
+    padding-left: 20px;
 }
 
 .second__intro__inner{
@@ -82,7 +79,6 @@ padding-left: 20px;
 .header {
   width: 100%;
   padding-top: 30px;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -101,12 +97,14 @@ padding-left: 20px;
   font-weight: 700;
   color: #fff;
 }
-
+@mixin text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
 /* Nav */
 .nav {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+    @include text ();
 }
 
 .nav__link {
@@ -114,17 +112,13 @@ padding-left: 20px;
   vertical-align: center;
   margin: 0 15px;
   position: relative;
-
   color: #585858;
   text-decoration: none;
-
   transition: color 0.1s linear;
 }
 .nav__link__select{
     background: transparent; 
-    font-size: 14px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+    @include text ();
   border: 0;
   /* убрала стрелку селекта */
   -moz-appearance: none;
@@ -136,6 +130,7 @@ padding-left: 20px;
 .nav__link__select::-ms-expand{
     display: none;
 }
+
 .select__wrapper{
     position: relative;
 }
@@ -261,6 +256,7 @@ padding: 8.4px, 17.28px, 7.98px, 16.8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 .video__text{
     width: 620px;
@@ -285,7 +281,6 @@ margin-bottom: 0;
 p{
     width: 490px;
     height: auto;
-
 }
 hr{
     border: 1px solid #D4D4D4;
@@ -295,4 +290,26 @@ hr{
 }
 .price{
     margin-left: 80px;
+}
+
+
+
+.intro__form{
+    background-image: url(/images/circle.png);
+    background-repeat: no-repeat;
+    background-position: right, center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    
+}
+.bigform{
+    width: 660px;
+height: 926px;
+padding: 69px, 60px, 70px, 60px;
+border-radius: 25px;
+gap: 10px;
+background-color: #FFFFFF;
+box-shadow: 0 14px 28px  #79797933;
 }

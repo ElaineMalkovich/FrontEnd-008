@@ -245,6 +245,7 @@ ol {
 .intro__page {
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 60px;
   display: flex;
 }
 
@@ -283,6 +284,26 @@ hr {
 
 .price {
   margin-left: 80px;
+}
+
+.intro__form {
+  background-image: url("circle.2ca2584e.png");
+  background-position: 100%, center;
+  background-repeat: no-repeat;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  align-items: center;
+  display: grid;
+}
+
+.bigform {
+  padding: 69px, 60px, 70px, 60px;
+  background-color: #fff;
+  border-radius: 25px;
+  gap: 10px;
+  width: 660px;
+  height: 926px;
+  box-shadow: 0 14px 28px #79797933;
 }
 
 /*# sourceMappingURL=index.53678b06.css.map */
