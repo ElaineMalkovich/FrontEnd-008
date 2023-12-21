@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-  height: 100vh;
+ 
   background-image: url(/images/Polosa.png), url(/images/gradienthomepage.png),
     linear-gradient(to bottom, #439ef315 30%, #ffffff 40%);
 
@@ -39,7 +39,8 @@ body {
 
 .intro__inner {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 0;
+  margin-top: 180px;
   text-align: center;
   display: grid;
   grid-template-columns:  auto 400px;
@@ -60,11 +61,11 @@ body {
     font-family: "Montserrat", sans-serif;
     
     margin-bottom: 10px;
-    margin-left: 20px;
+   
 }
 ol{
     list-style-image: url(/images/forlist.png);
-    
+    padding-left: 13px;
 }
 .intro__subtitle{
     text-align: left;
@@ -118,6 +119,40 @@ padding-left: 20px;
   text-decoration: none;
 
   transition: color 0.1s linear;
+}
+.nav__link__select{
+    background: transparent; 
+    font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  border: 0;
+  /* убрала стрелку селекта */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+// Убираю стрелку селекта для IE
+.nav__link__select::-ms-expand{
+    display: none;
+}
+.select__wrapper{
+    position: relative;
+}
+.select__wrapper::before{
+content: "";
+position: absolute;
+top: 30%;
+left: 73px;
+transform: translateY(-30%);
+display: block;
+width: 9px;
+height: 6px;
+   border-style: solid;
+   border-width: 0 4.5px 6px 4.5px;
+   border-color: transparent transparent #000000 transparent;
+   transform: rotate(180deg);
+pointer-events: none;
 }
 .nav__link__button{
     background: transparent;
@@ -175,17 +210,89 @@ color: #83BCDC;
 }
 
 /* intro__footer */
-.intro__footer{
+.intro__pointer{
     margin-top: 100px;
     margin-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.intro__footer__text{
+.intro__pointer__text{
     color: #316594;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-top: 15px;
+}
+
+.video__background{
+    width: 468.02px;
+height: 629.92px;
+border-radius: 8.4px;
+background-color: #E2E2E2;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.wrapper__slider{
+    display: flex;
+    align-items: center;
+        justify-content: center;
+}
+.slider{
+    margin-left: 220px;
+}
+.page__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.arrow{
+    width: 50.39px;
+height: 50.39px;
+
+padding: 8.4px, 17.28px, 7.98px, 16.8px;
+
+}
+.intro__page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.video__text{
+    width: 620px;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding-left: 50px;
+}
+h2{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin: 0%;
+    color: #585858;
+}
+.video__subtitle{
+color: #B5B5B5;
+font-size: 16px;
+margin-bottom: 0;
+}
+p{
+    width: 490px;
+    height: auto;
+
+}
+hr{
+    border: 1px solid #D4D4D4;
+    width: 556px;
+   margin: 0;
+   margin-bottom: 20px;
+}
+.price{
+    margin-left: 80px;
 }
