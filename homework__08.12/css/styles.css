@@ -17,16 +17,15 @@ h1 {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 40px;
 }
-input{
+input {
   padding-left: 40px;
-    margin-right: 20px;
-    
+  margin-right: 20px;
 }
-.textform{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 700px;
+.textform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
 }
 input {
   width: 220px;
@@ -66,97 +65,94 @@ form {
   margin-bottom: 10px;
 }
 input[type="checkbox"] {
-    display: none;
-  }
-  .checkboxlabel span{
-    width: 30px;
-    height: 30px;
-    border-radius: 6.64px;
+  display: none;
+}
+.checkboxlabel span {
+  width: 30px;
+  height: 30px;
+  border-radius: 6.64px;
   border: 1px solid #976464;
   display: inline-block;
   position: relative;
-  background-color:#FFF;
+  background-color: #fff;
   padding: 2px;
-  }
-  [type=checkbox]:checked + span:before {
-    content: '\2714';
+}
+[type="checkbox"]:checked + span:before {
+  content: "\2714";
   position: absolute;
   left: 5px;
   top: 0px;
-  font-size:28px;
-  color:#976464;
-  }
-  
-.checkboxlabel{
-    font-size: 16px;
-    color: #424242;
+  font-size: 28px;
+  color: #976464;
+}
+
+.checkboxlabel {
+  font-size: 16px;
+  color: #424242;
   font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.checkboxform{
-   
-    width: 420px;
+.checkboxform {
+  width: 420px;
 }
-.forms{
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+.forms {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.radioform input[type=radio] {
-	display: none;}
-.radioform label{
-  
+.radioform input[type="radio"] {
+  display: none;
+}
+.radioform label {
   height: 31px;
   display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 25px;
-	margin-right: 0;
-	line-height: 18px;
-	user-select: none;}
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
 
-.radioform label::before{
+.radioform label::before {
   content: "";
-	display: inline-block;
-	width: 31px;
+  display: inline-block;
+  width: 31px;
   height: 31px;
-	position: absolute;
+  position: absolute;
   top: 50%;
-	left: 0;
-  transform: translate(-50%,-50%);
+  left: 0;
+  transform: translate(-50%, -50%);
 
-	background: url(../css/Ellipseoff.png) 0 0 no-repeat;
+  background: url(../css/Ellipseoff.png) 0 0 no-repeat;
 }
-.radioform input[type=radio]:checked + label:before {
-  background: url(../css/Ellipseon.png) 0 0 no-repeat, url(../css/Ellipseoff.png) 0 0 no-repeat;
-background-position: 50% 50%, 0;
-  }
-  
-.footerblock{
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-}
-.radioform{
-    width: 460px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 10px;
-    font-size: 16px;
+.radioform input[type="radio"]:checked + label:before {
+  background: url(../css/Ellipseon.png) 0 0 no-repeat,
+    url(../css/Ellipseoff.png) 0 0 no-repeat;
+  background-position: 50% 50%, 0;
 }
 
-.radiolabel{
-    
-  
-   text-align: right;
-    color: #424242;
-  font-family: "Montserrat", sans-serif;  
-  
-  
+.footerblock {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.radioform {
+  width: 460px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.radiolabel {
+  text-align: right;
+  color: #424242;
+  font-family: "Montserrat", sans-serif;
 }
