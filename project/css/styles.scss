@@ -90,6 +90,15 @@ align-self: center;
   right: 0;
   z-index: 1000;
 }
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
 
 .header__inner {
   display: flex;
@@ -97,6 +106,9 @@ align-self: center;
   align-items: center;
 }
 .header__burger{
+    display: none;
+}
+.header__post{
     display: none;
 }
 .header__logo {
@@ -668,55 +680,57 @@ height: auto;
 }
 
 @media (min-width:320px) and (max-width:1023px)  {
-// .nav{
-//     visibility: hidden;
-//     display: none;
-// }
+.nav{
+    visibility: hidden;
+    display: none;
+}
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .header__burger{
+    display: block;  
+}
+.header__post{
     display: block;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    z-index: 3;
-}
-.header__burger::before,.header__burger::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    background-color: #56AEDB;
-    height: 2px;
-}
-.header__burger span{
-    position: absolute;
-    background-color: #56AEDB;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-}
-.header__burger::before{
-    top: 0;
-}
-.header__burger::after{
-    bottom: 0;
-}
-.nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-background-color: #316594;
-z-index: 2;
 }
 .header__logo {
-   
     position: relative;
     z-index: 3;
+    width: 15%;
   }
+  .intro__inner {
+    width: 100%;
+    margin: auto auto;
+    margin-top: 180px;
+    text-align: center;
+    display: grid;
+    grid-template-columns:  auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: " second__intro__inner"
+                         " first__intro__inner";
+  }
+  .second__intro__inner{
+grid-area: second__intro__inner;
+
+  }
+  .first__intro__inner{
+grid-area: first__intro__inner;
+  }
+  .titleimg{
+    width: 50%;
+  }
+  .first__intro__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.intro__title{
+    font-size: 20px;
+}
 }
