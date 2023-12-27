@@ -547,7 +547,105 @@ h3 {
   width: 244px;
   height: 61px;
 }
+/* Footer*/
 
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  background: url(/images/Waves.png), url(/images/gradienthomepage.png),
+    linear-gradient(to bottom, #439ef315 30%, #ffffff 40%);
+
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.lastblock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.consultation{
+  margin-top: 70px;
+  width: 975px;
+height: 428px;
+border-radius: 25px;
+background-color: white;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.consultation__info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+h4{
+  width: 90%;
+  height: 96px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #47A7E3;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+.consultation__info__text{
+  font-size: 16px;
+  font-weight: 500;
+  color: #585858;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  width: 75%;
+height: 78px;
+}
+.contacts{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1196px;
+height: 280px;
+margin-top: 40px;
+}
+.footer__line{
+position: relative;
+z-index: 1;
+top: 100px;
+width: 1198px;
+border: 1px solid #B5DFFF;
+}
+.contacts__coll{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content:flex-start;
+}
+h5{
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  text-align: left;
+}
+.contacts__coll__subtitle{
+  font-size: 12px;
+  font-weight: 700;
+  color: #B5DFFF;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+}
+.contacts__coll__text{
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 3px;
+}
 @media (min-width: 1024px) and (max-width: 1438px) {
   .intro__title {
     font-size: 40px;
