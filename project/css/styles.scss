@@ -500,13 +500,6 @@ h3 {
   margin-left: auto;
   margin-right: 0;
 }
-.intro__services {
-  margin-top: 100px;
-  margin-bottom: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 /* Intro__services*/
 .intro__services {
@@ -554,8 +547,9 @@ h3 {
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-  background: url(/images/Waves.png), url(/images/gradienthomepage.png),
-    linear-gradient(to bottom, #439ef315 30%, #ffffff 40%);
+  height: auto;
+  background: url(/images/FooterWaves.png)
+    ;
 
   -webkit-background-size: cover;
   background-size: cover;
@@ -567,7 +561,7 @@ h3 {
   justify-content: center;
 }
 .consultation{
-  margin-top: 70px;
+  margin-top: 190px;
   width: 975px;
 height: 428px;
 border-radius: 25px;
@@ -607,16 +601,17 @@ height: 78px;
 .contacts{
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 1196px;
-height: 280px;
+height: 320px;
 margin-top: 40px;
 }
 .footer__line{
 position: relative;
 z-index: 1;
 top: 100px;
-width: 1198px;
+left: 28px;
+width: 1160px;
 border: 1px solid #B5DFFF;
 }
 .contacts__coll{
@@ -638,13 +633,61 @@ h5{
   font-weight: 700;
   color: #B5DFFF;
   font-family: "Montserrat", sans-serif;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .contacts__coll__text{
   font-size: 12px;
   font-weight: 600;
   color: #FFFFFF;
   margin: 3px;
+}
+.contacts__coll__button{
+  background-color: transparent;
+  width: 182px;
+height: 31px;
+padding: 8px, 24px, 8px, 24px;
+border-radius: 10px;
+border: 2px solid white;
+color: white;
+}
+.contacts__coll__socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 122px;
+  margin-top: 10px;
+}
+.contacts__coll__meta{
+  width: 170px;
+}
+.footer__logo{
+  position: relative;
+  z-index: 7;
+  top: -40px;
+
+}
+.aside{
+  width: 100%;
+  height: 66px;
+  background: #2F6192;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -75px;
+ position: relative;
+  z-index: 1000;
+}
+.aside__autor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.aside__autor__text{
+  font-size: 11px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
 }
 @media (min-width: 1024px) and (max-width: 1438px) {
   .intro__title {
@@ -956,7 +999,7 @@ h5{
   }
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 365px) and (max-width: 768px) {
   .container {
     margin: auto auto;
     padding-left: 20px;
